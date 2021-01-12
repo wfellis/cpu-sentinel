@@ -70,7 +70,7 @@ build_pid_list() {
 		verb="reprioritize"
 	fi
 	sentinel_list="\nProcess names and associated PIDs to $verb to $priority priority:"
-	sentinel_list="$sentinel_list\n-------------------------------------------------------------------"
+	sentinel_list="$sentinel_list\n----------------------------somnium--------------------------------"
 	while IFS='' read -r process || [ -n "$process" ]; do
 		if [ "$process" = "One process name per line (can contain spaces)" ]; then
 			echo >&2
